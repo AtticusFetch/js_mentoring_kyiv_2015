@@ -2,6 +2,7 @@
 
 body {
   padding-top: 20px;
+  background-color: #dedede;
 }
 
 
@@ -30,6 +31,8 @@ body {
   clear: both;
   height: 115px;
   padding-top: 15px;
+  background-color: #bebebe;
+  max-width: 70%;
 }
 
 /** Detail View **/
