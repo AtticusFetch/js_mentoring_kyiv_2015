@@ -30,7 +30,7 @@ phonecatApp.config(['$routeProvider',
                 templateUrl: 'partials/contacts.html',
                 controller: 'ContactsCtrl'
             }).
-            when('/feedback', {
+            when('/phones/feedback/:phoneId', {
                 templateUrl: 'partials/feedback.html',
                 controller: 'feedbackCtrl'
             }).

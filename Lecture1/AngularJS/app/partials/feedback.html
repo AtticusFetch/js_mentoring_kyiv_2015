@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+
+            <h1>{{phoneId}} feedbacks</h1>
+            <ul class="feedbacks">
+                <li ng-repeat="feedback in feedbacks">
+                    <h3 class="feedback-author">Written by: {{feedback.UserName}}</h3>
+                    <p class="feedback-content">{{feedback.content}}</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
