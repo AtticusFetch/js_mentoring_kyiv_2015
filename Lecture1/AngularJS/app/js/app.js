@@ -3,26 +3,38 @@
 /* App Module */
 
 var phonecatApp = angular.module('phonecatApp', [
-  'ngRoute',
-  'phonecatAnimations',
+    'ngRoute',
+    'phonecatAnimations',
 
-  'phonecatControllers',
-  'phonecatFilters',
-  'phonecatServices'
+    'phonecatControllers',
+    'phonecatFilters',
+    'phonecatServices'
 ]);
 
 phonecatApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
-      }).
-      otherwise({
-        redirectTo: '/phones'
-      });
-  }]);
+    function ($routeProvider) {
+        $routeProvider.
+            when('/phones', {
+                templateUrl: 'partials/phone-list.html',
+                controller: 'PhoneListCtrl'
+            }).
+            when('/phones/:phoneId', {
+                templateUrl: 'partials/phone-detail.html',
+                controller: 'PhoneDetailCtrl'
+            }).
+            when('/', {
+                templateUrl: 'partials/main-page.html',
+                controller: 'MainPageCtrl'
+            }).
+            when('/contacts', {
+                templateUrl: 'partials/contacts.html',
+                controller: 'ContactsCtrl'
+            }).
+            when('/feedback', {
+                templateUrl: 'partials/feedback.html',
+                controller: 'feedbackCtrl'
+            }).
+            otherwise({
+                redirectTo: '/phones'
+            });
+    }]);

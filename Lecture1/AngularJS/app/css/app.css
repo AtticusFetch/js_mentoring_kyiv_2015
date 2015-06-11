@@ -5,6 +5,12 @@ body {
   background-color: #dedede;
 }
 
+.main-page-container {
+  width: 70%;
+  color: #545454;
+  margin-left: 20px;
+}
+
 
 .phone-images {
   background-color: white;
