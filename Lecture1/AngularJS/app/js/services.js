@@ -11,7 +11,7 @@ phonecatServices.factory('Phone', ['$resource',
     });
   }]);
 
-phonecatServices.factory('Feedback', [$resource,
+phonecatServices.factory('Feedback', ['$resource',
   function ($resource) {
     return $resource('feedbacks/:phoneId.json', {}, {
       query: {method: 'GET', params:{phoneId:'phones'}, isArray:true}
