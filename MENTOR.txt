@@ -1,1 +1,6 @@
-Init repo for Lecture 1
+
+Lecture 1
+  Init repo for Lecture 1
+  Check feature: feedback
+  Comment: Service for feedback implemented correctly, and used in controller
+  Suggestion: Try to cover functionality by unit test for service call 
