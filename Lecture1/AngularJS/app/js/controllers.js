@@ -28,7 +28,7 @@ phonecatControllers.controller('ContactsCtrl', function () {
 });
 
 phonecatControllers.controller('feedbackCtrl', ['$scope', '$routeParams', 'Feedback', function ($scope, $routeParams, Feedback) {
-        $scope.feedbacks = Feedback.get({phoneId: $routeParams.phoneId}, function (phone) {
-            $scope.phoneId = $routeParams.phoneId;
-        });
+    $scope.feedbacks = Feedback.get({phoneId: $routeParams.phoneId}, function (phone) {
+        $scope.phoneId = $routeParams.phoneId;
+    });
 }]);
